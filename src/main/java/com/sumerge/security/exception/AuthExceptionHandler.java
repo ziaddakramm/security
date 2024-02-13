@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 @ControllerAdvice
 public class AuthExceptionHandler {
     @ExceptionHandler
-    public ResponseEntity<AuthErrorResponse> handleGenericMovieException(Exception exc)
+    public ResponseEntity<AuthErrorResponse> handleGenericAuthException(Exception exc)
     {
         AuthErrorResponse errorResponse= new AuthErrorResponse();
 

@@ -108,23 +108,5 @@ public class AuthenticationControllerTest {
     }
 
 
-//
-//    @Test
-//    public void registerExistingEmail() throws Exception {
-//        User mockUser=new User(1,"za@gmail.com","123456",Role.USER);
-//        RegisterRequest mockRequest=new RegisterRequest("za@gmail.com","123456",Role.USER);
-//
-//
-////        given(userRepository.findByEmail("za@gmail.com")).willReturn(Optional.of(mockUser));
-//
-//        given(authService.emailAlreadyExists(mockUser.getEmail())).willReturn(true);
-//        mockMvc.perform(post("/api/auth/register")
-//                        .contentType(MediaType.APPLICATION_JSON)
-//                        .content(objectMapper.writeValueAsString(mockRequest)));
-//
-//
-//verify(authService.register(mockRequest));
-//        System.out.println("");
-//    }
 
 }
